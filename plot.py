@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 dir_path = './tempos/'
 
 # lista com os tamanhos de entrada (nome dos arquivos csv)
-input_sizes = ['1k', '10k', '100k', '500k' ,'1M','10M','25M']
+input_sizes = ['1k', '10k', '100k', '500k' ,'1M','5M','10M','25M']
 
 # dicionário para armazenar os dados de tempo de execução médio para cada tamanho de entrada
 mean_times = {}

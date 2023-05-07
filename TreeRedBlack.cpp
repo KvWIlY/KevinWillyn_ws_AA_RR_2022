@@ -502,7 +502,7 @@ int main() {
 
   // Aqui você coloca o seu código que deseja medir o tempo de execução
     RBTree tree; // declaração da árvore binária de busca
-    std::string filename = "./inputs/arquivo_25m.csv"; // nome do arquivo CSV
+    std::string filename = "./inputs/arquivo_7_5m.csv"; // nome do arquivo CSV
     insertCSVValues(tree, filename); // chamada da função para inserir os valores na árvore
 
   // Obter o tempo atual após a execução do código
@@ -516,7 +516,7 @@ int main() {
   std::cout <<  time_elapsed_ms.count() << std::endl;
 
   // Salvar o tempo de execução em um arquivo de texto
-  std::ofstream arquivo("./tempos/tempo25m.txt", std::ios::app); // "app" para adicionar ao final do arquivo
+  std::ofstream arquivo("./tempos/tempo_7_5m.txt", std::ios::app); // "app" para adicionar ao final do arquivo
   arquivo  << time_elapsed_ms.count() << std::endl;
   arquivo.close();
 
